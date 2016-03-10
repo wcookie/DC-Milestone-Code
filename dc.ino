@@ -73,14 +73,14 @@ void loop() {
     
     else if (pressed==LOW && secondpressed==LOW){
     brightness=.75*256;
-    digitalWrite(ledPin, brightness);
-    digitalWrite(secondledPin, brightness);
+    analogWrite(ledPin, brightness);
+    analogWrite(secondledPin, brightness);
     }
     else if (pressed==LOW && secondpressed==HIGH) {
       brightness=.25*256;
       //set both led to 25%
-      digitalWrite(ledPin, brightness);
-      digitalWrite(secondledPin, brightness);
+      analogWrite(ledPin, brightness);
+      analogWrite(secondledPin, brightness);
       // wait a sec
       delay(1000);
       //set first to 0 second to 100
@@ -94,8 +94,8 @@ void loop() {
     else if (pressed==HIGH && secondpressed==LOW) {
         brightness=.25*256;
       //set both led to 25%
-      digitalWrite(ledPin, brightness);
-      digitalWrite(secondledPin, brightness);
+      analogWrite(ledPin, brightness);
+      analogWrite(secondledPin, brightness);
       // wait a sec
       delay(1000);
       //set second to 0 first to 100
