@@ -18,33 +18,6 @@ void setup() {
  pinMode(secondbutton, OUTPUT);
  Serial.begin(9600);
 }
-/*
-void loop() { 
-  // put your main code here, to run repeatedly:
-  pressed = digitalRead(button);
-  secondpressed = digitalRead(secondbutton);
-  if (pressed == HIGH){
-
-    brightness = analogRead(potPin);
-    brightness = brightness/2;
-    brightness=brightness-255;
-    Serial.print(brightness);
-    Serial.print( "\n");
-    analogWrite(ledPin, brightness);
-
-    }
-else {
-    digitalWrite(ledPin, LOW);
-
-}
-  if (secondpressed == HIGH) {
-    digitalWrite(secondledPin, HIGH);
-  }
-  else {
-    digitalWrite(secondledPin, LOW);
-  }
-}
-*/
 
 void loop() {
   pressed = digitalRead(button);
